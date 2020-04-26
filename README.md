@@ -8,6 +8,17 @@ This PWA application Budget Tracker that uses various node packages to make API 
 This is a fast and easy way to track money is important, while allowing access to previously input information anytime is even more important. Having offline functionality is paramount to the applications success.
 
 ## User Story
-AS A user is on Budget App without an internet connection
-I WANT to input withdrawal or deposit
-SO THAT they will be shown on the page, and added to their transaction history when their connection is back online.
+
+AS A [traveler], 
+I WANT [to track and input withdrawal or deposit without internet connections],
+SO THAT [they will be shown on the page, and added to their transaction history when their connection is back online].
+
+## Features 
+* Access to a Budget App without an internet connection
+* Easily track your money while you travel.
+
+## License
+This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md).
+
+- - -
+© 2020 All Rights Reserved.
