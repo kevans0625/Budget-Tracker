@@ -17,7 +17,7 @@ SO THAT [they will be shown on the page, and added to their transaction history 
 * Access to a Budget App without an internet connection
 * Easily track your money while you travel.
 
-## License
+## License 
 This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md).
 
 - - -
