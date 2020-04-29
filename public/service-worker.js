@@ -1,13 +1,14 @@
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
-    '/index.js',
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
     'styles.css',
     '/manifest.webmanifest',
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+    '/index.js',
     '/icons/icon-144x144.png',
     '/icons/icon-192x192.png',
-    '/icons/icon-512x512.png',
-    './routes/api.js'
+    '/icons/icon-512x512.png'
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -74,3 +75,5 @@ self.addEventListener("fetch", function(evt) {
         })
     );
 });
+
+//indexedDB
