@@ -2,10 +2,11 @@ const FILES_TO_CACHE = [
     '/',
     '/index.html',
     "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
-    'styles.css',
+    '/styles.css',
     '/manifest.webmanifest',
     "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
     '/index.js',
+    '/db.js',
     '/icons/icon-144x144.png',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png'
@@ -19,10 +20,14 @@ self.addEventListener("install", function(evt) {
     evt.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             console.log("Your files were pre-cached successfully!");
-            return cache.addAll(FILES_TO_CACHE);
+            // return cache.addAll(FILES_TO_CACHE);
+            cache.addAll(FILES_TO_CACHE, FILES_TO_CACHE.map(function(FILES_TO_CACHE) {
+                return new Request(FILES_TO_CACHE, { mode: 'no-cors' });
+            })).then(function() {
+                console.log('All resources have been fetched and cached.');
+            });
         })
     );
-
     self.skipWaiting();
 });
 
